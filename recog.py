@@ -100,6 +100,7 @@ if flag == 1:
         print("Press 3 to exit")
         demand = int(input("Enter the task you want to proceed:"))
         if demand == 1:
+            os.system("terraform apply")
             os.system("terraform apply -auto-approve")
         elif demand == 2:
             phno = input("Enter mobile no:")
